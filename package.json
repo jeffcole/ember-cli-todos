@@ -1,7 +1,7 @@
 {
-  "name": "myapp",
+  "name": "todos",
   "version": "0.0.0",
-  "description": "Small description for myapp goes here",
+  "description": "Small description for todos goes here",
   "private": true,
   "directories": {
     "doc": "doc",
