@@ -1,3 +1,6 @@
-`import DS from 'ember-data';`
+`import DS from "ember-data";`
 
-`export default DS.FixtureAdapter.extend({});`
+ApplicationAdapter = DS.RESTAdapter.extend
+  namespace: "api"
+
+`export default ApplicationAdapter;`
