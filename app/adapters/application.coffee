@@ -1,6 +1,10 @@
 `import DS from "ember-data";`
 
-ApplicationAdapter = DS.RESTAdapter.extend
-  namespace: "api"
+# Use this adapter to get todos from http-mocks
+# ApplicationAdapter = DS.RESTAdapter.extend
+#   namespace: "api"
+
+ApplicationAdapter = DS.LSAdapter.extend
+  namespace: "ember-cli-todos"
 
 `export default ApplicationAdapter;`
