@@ -1,53 +1,13 @@
-# Todos
+# Ember CLI Todos
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Hi
 
-## Prerequisites
+You might want to make an [Ember][emberjs] app. You might have heard that [Ember CLI][ember-cli] is a neat thing to use, and that it will be included in the forthcoming [Ember 2.0][ember-2.0]. As you develop your app, you might want to look at an example app, like the Ember [getting started][ember-getting-started] app. Unfortunately, that app has not yet been updated to use Ember CLI.
 
-You will need the following things properly installed on your computer.
+This app implements the Ember getting started Todos app, using CLI features where possible. It is implemented in [CoffeeScript][coffeescript], because it's good for your health and well-being.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+[emberjs]: http://emberjs.com/
+[ember-cli]: http://www.ember-cli.com/
+[ember-2.0]: https://github.com/emberjs/rfcs/pull/15
+[ember-getting-started]: http://emberjs.com/guides/getting-started/
+[coffeescript]: http://coffeescript.org/
