@@ -5,6 +5,8 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-  @resource "todos", path: "/"
+  @resource "todos", {path: "/"}, ->
+    @route("active")
+    @route("completed")
 
 `export default Router;`

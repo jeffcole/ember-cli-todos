@@ -16,6 +16,28 @@ TodosController = Ember.ArrayController.extend
       # Save the new model
       todo.save()
 
+    clearCompleted: ->
+      completed = @filterBy "isCompleted", true
+      completed.invoke "deleteRecord"
+      completed.invoke "save"
+
+  allAreDone: ((key, value)->
+    if value == undefined
+      !!@get("length") and @isEvery("isCompleted")
+    else
+      @setEach "isCompleted", value
+      @invoke "save"
+      value
+  ).property("@each.isCompleted")
+
+  hasCompleted: (->
+    @get("completed") > 0
+  ).property("completed")
+
+  completed: (->
+    @filterBy("isCompleted", true).get("length")
+  ).property("@each.isCompleted")
+
   remaining: (->
     @filterBy("isCompleted", false).get("length")
   ).property("@each.isCompleted")
