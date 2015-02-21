@@ -16,4 +16,12 @@ TodosController = Ember.ArrayController.extend
       # Save the new model
       todo.save()
 
+  remaining: (->
+    @filterBy("isCompleted", false).get("length")
+  ).property("@each.isCompleted")
+
+  inflection: (->
+    if @get("remaining") == 1 then "item" else "items"
+  ).property("remaining")
+
 `export default TodosController`
